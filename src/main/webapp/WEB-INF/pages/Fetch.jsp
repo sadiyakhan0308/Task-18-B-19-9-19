@@ -13,14 +13,14 @@
 <td>Name  ${student.name}</td>
 </tr>
 <tr>
-<td>Branch  ${student.branch}</td>
+<td>Branch  ${student.dept}</td>
 </tr>
 <tr>
 <td>Semester ${student.sem}</td>
 </tr>
 </table>				
 	<hr>
-	<a href="search.jsp">Search-More</a><br>
+	<a href="searchPage.jsp">Search-More</a><br>
 	<a href="index.jsp">Home</a><br>
 </body>
 </html>

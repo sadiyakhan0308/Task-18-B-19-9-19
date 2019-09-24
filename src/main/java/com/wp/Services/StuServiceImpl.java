@@ -10,33 +10,41 @@ import com.wp.Dao.StuDao;
 import com.wp.Models.Student;
 
 
-
 @Service
-public class StuServiceImpl implements StuService {
+public class StuServiceImpl  implements StuService{
+
 	
 	@Autowired
-	private StuDao studentDAO;
-	
-	@Override
+	 private StuDao daoInterface;
 	public void studentEntry(Student student) {
-		studentDAO.addStudent(student);
+		daoInterface.addStudent(student);
+		
 	}
 
-	@Override
-	public void deleteStudent(int rno) {
-		studentDAO.removeStudent(rno);
+	public void deleteStudent(int code) {
+		daoInterface.removeStudent(code);
+		
+	}
+
+	public void changeStudentDetails(Student student) {
+		daoInterface.updateStudent(student);
+		
 	}
 
 	
-	@Override
-	public Student searchStudent(int rno) {
-		return studentDAO.searchStudent(rno);
+	public Student searchStudent(int code) {
+		
+		return daoInterface.getStudentById(code);
 	}
 
-	@Override
 	public List<Student> viewAllStudents() {
-		return studentDAO.getAllStudents();
+		
+		return daoInterface.getAllStudents();
 	}
 
-	
+	public void updateStudent(Student student) {
+		daoInterface.updateStudent(student);
+		
+	}
+
 }

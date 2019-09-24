@@ -50,7 +50,7 @@ public class ProjectConfig {
 		try {
 			ob.setDriverClass("com.mysql.jdbc.Driver");
 		} catch (PropertyVetoException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 		ob.setJdbcUrl("jdbc:mysql://localhost:3306/sadiya");

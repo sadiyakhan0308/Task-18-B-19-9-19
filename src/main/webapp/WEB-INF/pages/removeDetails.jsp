@@ -24,7 +24,7 @@ body {
 </head>
 <body>
 	<h3>Delete Student</h3>
-	<form action="removestudent">
+	<form action="removeDetails">
 		<table align="center" cellpadding="10">
 
 			<tr>
@@ -37,7 +37,7 @@ body {
 			</tr>
 		</table>
 	</form>
-	<a href="delete.jsp">Delete-More-Students</a>
+	<a href="removeDetails.jsp">Delete-More-Students</a>
 	<br>
 	<a href="index.jsp">Home</a>
 </body>

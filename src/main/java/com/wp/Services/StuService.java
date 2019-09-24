@@ -9,5 +9,9 @@ public interface StuService {
 	public void deleteStudent(int rno); 
 	public Student searchStudent(int rno);
 	public List<Student> viewAllStudents();
+	public void updateStudent(Student student);
+	public void changeStudentDetails(Student student);
+		
+	
 
 }
